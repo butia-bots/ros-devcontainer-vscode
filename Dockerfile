@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=ros:melodic
+ARG BASE_IMAGE=ghcr.io/butia-bots/tmc_wrs_binary:nvidia
 
 FROM maven AS xsdcache
 
