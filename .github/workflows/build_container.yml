@@ -14,6 +14,9 @@ jobs:
       - name: Log into registry
         run: | 
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      - name: Pull docker image
+        run: |
+          docker pull ghcr.io/butia-bots/tmc_wrs_binary:nvidia
       - name: Build image
         run: |
           ./build.sh
