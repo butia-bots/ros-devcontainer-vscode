@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=ghcr.io/butia-bots/tmc_wrs_binary:nvidia
+ARG BASE_IMAGE=ghcr.io/butia-bots/tmc_wrs_docker:nvidia
 
 FROM maven AS xsdcache
 
