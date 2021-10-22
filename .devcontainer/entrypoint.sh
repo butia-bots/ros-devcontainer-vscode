@@ -12,9 +12,7 @@ ln -sfn /home/developer/.vscode /workspace/.vscode
 rm -f /workspace/compile_flags.txt || true
 sed -e 's@\$ROS_DISTRO@'"$ROS_DISTRO"'@' /home/developer/compile_flags.txt > /workspace/compile_flags.txt
 
-ln -sfn /wrs_ws /home/developer/workspace
-
-source /wrs_ws/devel/setup.bash
+source /butia_ws/devel/setup.bash
 
 cd /home/developer
 
