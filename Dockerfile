@@ -1,4 +1,5 @@
 ARG BASE_IMAGE=ghcr.io/butia-bots/butia_docker:melodic
+ARG ROS_DISTRO=melodic
 
 FROM maven AS xsdcache
 
