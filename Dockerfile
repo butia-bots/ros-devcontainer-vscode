@@ -1,5 +1,4 @@
 ARG BASE_IMAGE=ghcr.io/butia-bots/butia_docker:melodic
-ARG ROS_DISTRO=melodic
 
 FROM maven AS xsdcache
 
@@ -31,6 +30,8 @@ FROM $BASE_IMAGE
 SHELL ["/bin/bash", "-c"]
 
 ENV DEBIAN_FRONTEND noninteractive
+
+ENV ROS_DISTRO melodic
 
 # workaround to enable bash completion for apt-get
 # see: https://github.com/tianon/docker-brew-ubuntu-core/issues/75
